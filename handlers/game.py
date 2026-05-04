@@ -376,7 +376,7 @@ async def cmd_hint(message: Message):
         else:
             hints = "\n".join(game.get_hints(player))
             await message.bot.send_message(message.from_user.id, f"🔍 АГЕНТ\n📍 {game.location['name']}\n\n{hints}")
-        await message.answer("✅ Проверьте ЛС!")
+        await message.answer("✅ Проверьте ЛС!") 
         except:
 await message.answer("⚠️ Не могу отправить ЛС. Напишите боту /start")
 
