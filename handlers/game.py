@@ -379,7 +379,6 @@ async def cmd_hint(message: Message):
         await message.answer("✅ Проверьте ЛС!")
     except Exception:
         await message.answer("⚠️ Не могу отправить ЛС. Напишите боту /start")
-
 @router.message(Command("status"))
 async def cmd_status(message: Message):
     chat_id = message.chat.id
