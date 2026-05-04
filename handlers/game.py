@@ -363,8 +363,6 @@ async def new_game_callback(callback: CallbackQuery):
 
 @router.message(Command("hint"))
 async def cmd_hint(message: Message):
-@router.message(Command("hint"))
-async def cmd_hint(message: Message):
     chat_id = message.chat.id
     if chat_id not in active_games:
         return
