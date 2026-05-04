@@ -363,6 +363,8 @@ async def new_game_callback(callback: CallbackQuery):
 
 @router.message(Command("hint"))
 async def cmd_hint(message: Message):
+@router.message(Command("hint"))
+async def cmd_hint(message: Message):
     chat_id = message.chat.id
     if chat_id not in active_games:
         return
@@ -376,9 +378,9 @@ async def cmd_hint(message: Message):
         else:
             hints = "\n".join(game.get_hints(player))
             await message.bot.send_message(message.from_user.id, f"🔍 АГЕНТ\n📍 {game.location['name']}\n\n{hints}")
-        await message.answer("✅ Проверьте ЛС!") 
-        except:
-await message.answer("⚠️ Не могу отправить ЛС. Напишите боту /start")
+        await message.answer("✅ Проверьте ЛС!")
+    except Exception:
+        await message.answer("⚠️ Не могу отправить ЛС. Напишите боту /start")
 
 @router.message(Command("status"))
 async def cmd_status(message: Message):
