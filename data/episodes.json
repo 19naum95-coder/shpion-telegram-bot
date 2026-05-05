@@ -1,0 +1,62 @@
+[
+  {
+    "number": 1,
+    "title": "Первое задание",
+    "description": "Новобранцы агентства получают своё первое боевое задание. Шпион проник в организацию, и его нужно вычислить.",
+    "location_pool": ["Офис", "Полицейский участок", "Банк"],
+    "special_rules": {
+      "analyst_role": false,
+      "misinformation": false,
+      "double_voting": false
+    },
+    "unlocks": ["basic_hints"]
+  },
+  {
+    "number": 2,
+    "title": "Усложнение",
+    "description": "Шпионы становятся хитрее. Агентам нужно быть более внимательными к деталям.",
+    "location_pool": ["Аэропорт", "Вокзал", "Посольство", "Музей"],
+    "special_rules": {
+      "analyst_role": false,
+      "misinformation": false,
+      "double_voting": false
+    },
+    "unlocks": ["extended_timer"]
+  },
+  {
+    "number": 3,
+    "title": "Двойная игра",
+    "description": "Враг использует дезинформацию! Один из агентов получит ложные подсказки.",
+    "location_pool": ["Казино", "Ресторан", "Больница", "Школа"],
+    "special_rules": {
+      "analyst_role": false,
+      "misinformation": true,
+      "double_voting": false
+    },
+    "unlocks": ["misinformer_role", "counter_intel_role"]
+  },
+  {
+    "number": 4,
+    "title": "Элита агентства",
+    "description": "В команду добавлен аналитик с расширенными знаниями о локации.",
+    "location_pool": ["Аквапарк", "Зоопарк", "Стадион", "Кинотеатр"],
+    "special_rules": {
+      "analyst_role": true,
+      "misinformation": false,
+      "double_voting": false
+    },
+    "unlocks": ["analyst_role"]
+  },
+  {
+    "number": 5,
+    "title": "Финальная операция",
+    "description": "Решающая битва! Все специальные роли активны. Шпион особо опасен.",
+    "location_pool": ["Посольство", "Полицейский участок", "Банк", "Аэропорт"],
+    "special_rules": {
+      "analyst_role": true,
+      "misinformation": true,
+      "double_voting": true
+    },
+    "unlocks": ["all_features"]
+  }
+]
